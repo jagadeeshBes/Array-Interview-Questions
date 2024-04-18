@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //How can You check if something is an array ?
+
+        //method 1
+        var array =[1,2,3,4,5]
+        let obj ={one:1}
+        let other
+        let str = 'jaga'
+        let result = Array.isArray(array);
+        console.log(result)
+
+        //Method 2
+        var array2 =[1,2,3,4,5]
+        if(typeof array == "Object"){
+            console.log("it id an array")
+        }
+
+        //Method 3
+        function checkArray(val){
+            if(typeof val == "String"){
+                console.log("it is an string")
+            }
+            else if(typeof val == "Number"){
+                console.log("it is an number")
+            }
+            else if(typeof val == 'undefined'){
+                console.log("it is an undefinded")
+            }
+            else{
+                console.log("it is a array")
+            }
+        }
+        checkArray(other)
+    </script>
+    
+</body>
+</html>

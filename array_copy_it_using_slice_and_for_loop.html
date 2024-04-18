@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = [1,2,3,4,5];
+        tempArray = [];
+        //slice
+        let result = array.slice(0,5);
+        console.log(result)
+
+        //for loop
+        for (let i=0; i<array.length;++i){
+            tempArray[i]=array[i]
+        }
+        console.log(tempArray)
+
+        //method 3
+
+        tempArray=[...array];
+        console.log(tempArray)
+    </script>
+</body>
+</html>
